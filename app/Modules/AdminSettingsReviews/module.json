@@ -1,0 +1,10 @@
+{
+    "name": "AdminSettingsReviews",
+    "slug": "adminSettingsReviews",
+    "version": "1.0",
+    "description": "This is the description for the Adminsettingsreviews module.",
+    "Settings": "1",
+    "url": "reviews",
+    "section": "Отзывы",
+    "order": 1001
+}

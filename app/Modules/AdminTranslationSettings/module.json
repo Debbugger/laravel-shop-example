@@ -1,0 +1,10 @@
+{
+  "name": "AdminTranslationSettings",
+  "slug": "adminTranslationSettings",
+  "version": "1.0",
+  "description": "This is the description for the Admintranslationsettings module.",
+  "Settings": "1",
+  "url": "translations",
+  "section": "Переводы",
+  "order": 1003
+}

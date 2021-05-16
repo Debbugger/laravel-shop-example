@@ -1,0 +1,10 @@
+{
+    "name": "AdminSettingsAdvantage",
+    "slug": "adminSettingsAdvantage",
+    "version": "1.0",
+    "description": "This is the description for the Adminsettingsadvantage module.",
+    "Settings": "1",
+    "url": "advantage",
+    "section": "Преимущества",
+    "order": 1000
+}

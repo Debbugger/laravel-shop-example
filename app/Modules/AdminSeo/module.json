@@ -1,0 +1,10 @@
+{
+    "name": "AdminSeo",
+    "slug": "adminSeo",
+    "version": "1.0",
+    "description": "This is the description for the Adminseo module.",
+    "Settings": "1",
+    "url": "seo",
+    "section": "Seo",
+    "order": 2000
+}

@@ -1,0 +1,7 @@
+{
+    "name": "AdminManagementProductValues",
+    "slug": "adminManagementProductValues",
+    "version": "1.0",
+    "description": "This is the description for the Adminsettingsproductvalues module.",
+    "order": 10000
+}

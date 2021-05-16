@@ -1,0 +1,10 @@
+{
+    "name": "AdminSettingsPartners",
+    "slug": "adminSettingsPartners",
+    "version": "1.0",
+    "description": "This is the description for the Adminsettingspartners module.",
+    "Settings": "1",
+    "url": "partners",
+    "section": "Партнеры",
+    "order": 1002
+}

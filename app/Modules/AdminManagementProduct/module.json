@@ -1,0 +1,10 @@
+{
+    "name": "AdminManagementProduct",
+    "slug": "adminManagementProduct",
+    "version": "1.0",
+    "description": "This is the description for the AdminManagementproduct module.",
+    "Management": "1",
+    "url": "product",
+    "section": "Товары",
+    "order": 1003
+}

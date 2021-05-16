@@ -1,0 +1,174 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=3468, tid=0x0000000000002324
+#
+# JRE version:  (8.0_202-b39) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.202-b39 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000020f800):  JavaThread "Unknown thread" [_thread_in_vm, id=8996, stack(0x00000000025a0000,0x00000000026a0000)]
+
+Stack: [0x00000000025a0000,0x00000000026a0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000020f800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8996, stack(0x00000000025a0000,0x00000000026a0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000c2400000, size: 988 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+Compressed class space size: 1073741824 Address: 0x00000000146a0000
+
+Heap:
+ PSYoungGen      total 18432K, used 317K [0x00000000eb700000, 0x00000000ecb80000, 0x0000000100000000)
+  eden space 15872K, 2% used [0x00000000eb700000,0x00000000eb74f5d0,0x00000000ec680000)
+  from space 2560K, 0% used [0x00000000ec900000,0x00000000ec900000,0x00000000ecb80000)
+  to   space 2560K, 0% used [0x00000000ec680000,0x00000000ec680000,0x00000000ec900000)
+ ParOldGen       total 42496K, used 0K [0x00000000c2400000, 0x00000000c4d80000, 0x00000000eb700000)
+  object space 42496K, 0% used [0x00000000c2400000,0x00000000c2400000,0x00000000c4d80000)
+ Metaspace       used 777K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 74K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011d30000,0x0000000011f20000] byte_map_base: 0x000000001171e000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000662a9f30
+ Begin Bits: [0x00000000125d0000, 0x0000000013540000)
+ End Bits:   [0x0000000013540000, 0x00000000144b0000)
+
+Polling page: 0x0000000001ea0000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002970000, 0x0000000002be0000, 0x0000000011970000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.206 loading class java/lang/Short
+Event: 0.206 loading class java/lang/Short done
+Event: 0.206 loading class java/lang/Integer
+Event: 0.206 loading class java/lang/Integer done
+Event: 0.206 loading class java/lang/Long
+Event: 0.207 loading class java/lang/Long done
+Event: 0.208 loading class java/lang/NullPointerException
+Event: 0.208 loading class java/lang/NullPointerException done
+Event: 0.208 loading class java/lang/ArithmeticException
+Event: 0.208 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x000000013fc60000 - 0x000000013fc91000 	C:\Program Files\JetBrains\PhpStorm 2019.1\jre64\bin\java.exe
+0x00000000777f0000 - 0x0000000077999000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000776d0000 - 0x00000000777ef000 	C:\Windows\system32\kernel32.dll
+0x000007fefda00000 - 0x000007fefda6b000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefefb0000 - 0x000007feff08b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff0a0000 - 0x000007feff13f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefded0000 - 0x000007fefdeef000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefee80000 - 0x000007fefefad000 	C:\Windows\system32\RPCRT4.dll
+0x00000000775d0000 - 0x00000000776ca000 	C:\Windows\system32\USER32.dll
+0x000007feff5a0000 - 0x000007feff607000 	C:\Windows\system32\GDI32.dll
+0x000007feff090000 - 0x000007feff09e000 	C:\Windows\system32\LPK.dll
+0x000007feff820000 - 0x000007feff8e9000 	C:\Windows\system32\USP10.dll
+0x000007fefc140000 - 0x000007fefc334000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefee00000 - 0x000007fefee71000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefd5d0000 - 0x000007fefd627000 	C:\Windows\system32\apphelp.dll
+0x000007fef59e0000 - 0x000007fef5a31000 	C:\Windows\AppPatch\AppPatch64\AcGenral.DLL
+0x000007fefd5a0000 - 0x000007fefd5c5000 	C:\Windows\system32\SspiCli.dll
+0x000007feff8f0000 - 0x000007feffaf3000 	C:\Windows\system32\ole32.dll
+0x000007fefdef0000 - 0x000007fefec78000 	C:\Windows\system32\SHELL32.dll
+0x000000006bf70000 - 0x000000006bf73000 	C:\Windows\system32\sfc.dll
+0x000007fef8bc0000 - 0x000007fef8bd0000 	C:\Windows\system32\sfc_os.DLL
+0x000007fefcaf0000 - 0x000007fefcb0e000 	C:\Windows\system32\USERENV.dll
+0x000007fefd740000 - 0x000007fefd74f000 	C:\Windows\system32\profapi.dll
+0x000007fefc9a0000 - 0x000007fefc9b8000 	C:\Windows\system32\dwmapi.dll
+0x000007fef7c60000 - 0x000007fef7c78000 	C:\Windows\system32\MPR.dll
+0x000007fefdc40000 - 0x000007fefdc6e000 	C:\Windows\system32\IMM32.DLL
+0x000007feff710000 - 0x000007feff819000 	C:\Windows\system32\MSCTF.dll
+0x000007fefd700000 - 0x000007fefd73f000 	C:\Windows\system32\nvinitx.dll
+0x0000000068fa0000 - 0x0000000069072000 	C:\Program Files\JetBrains\PhpStorm 2019.1\jre64\bin\msvcr100.dll
+0x0000000065ae0000 - 0x0000000066326000 	C:\Program Files\JetBrains\PhpStorm 2019.1\jre64\bin\server\jvm.dll
+0x000007fedfdc0000 - 0x000007fedfdc9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefdbf0000 - 0x000007fefdc3d000 	C:\Windows\system32\WS2_32.dll
+0x000007feff590000 - 0x000007feff598000 	C:\Windows\system32\NSI.dll
+0x000007fefb620000 - 0x000007fefb65b000 	C:\Windows\system32\WINMM.dll
+0x000007fefc7d0000 - 0x000007fefc7dc000 	C:\Windows\system32\VERSION.dll
+0x00000000779b0000 - 0x00000000779b7000 	C:\Windows\system32\PSAPI.DLL
+0x000007fefbe80000 - 0x000007fefbe8f000 	C:\Program Files\JetBrains\PhpStorm 2019.1\jre64\bin\verify.dll
+0x000007fefb1c0000 - 0x000007fefb1e9000 	C:\Program Files\JetBrains\PhpStorm 2019.1\jre64\bin\java.dll
+0x000007fefb1a0000 - 0x000007fefb1b6000 	C:\Program Files\JetBrains\PhpStorm 2019.1\jre64\bin\zip.dll
+
+VM Arguments:
+java_command: org.jetbrains.git4idea.http.GitAskPassApp Password for 'https://pgrowproj@bitbucket.org': 
+java_class_path (initial): C:/Program Files/JetBrains/PhpStorm 2019.1/plugins/git4idea/lib/git4idea-rt.jar;C:/Program Files/JetBrains/PhpStorm 2019.1/lib/xmlrpc-2.0.1.jar;C:/Program Files/JetBrains/PhpStorm 2019.1/lib/commons-codec-1.10.jar;C:/Program Files/JetBrains/PhpStorm 2019.1/lib/util.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-12.0.1
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Artem\bin;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\PuTTY\;C:\OSPanel\modules\php\PHP-7.2-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\Artem\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Artem\AppData\Local\Programs\Python\Python37\;C:\Users\Artem\AppData\Roaming\Composer\vendor\bin;C:\Program Files\nodejs;JAVA_HOME%\bin;C:\Users\Artem\AppData\Local\Android\Sdk;C:\Users\Artem\AppData\Local\Android\Sdk\platform-tools;C:\Users\Artem\AppData\Local\Android\Sdk\watchman;C:\Users\Artem\AppData\Roaming\npm;C:\Program Files\nodejs\node.exe;C:\Users\Artem\AppData\Roaming\Composer\vendor\bin;C:\Program Files\nodejs\;C:\Program Files\JetBrains\PyCharm Community Edition 2019.2.1\bin;
+USERNAME=Artem
+DISPLAY=:0.0
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.18015)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4042608k(371984k free), swap 7460868k(5284k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.202-b39) for windows-amd64 JRE (1.8.0_202-release-1483-b39), built on Mar  7 2019 22:58:46 by "builduser" with MS VC++ 10.0 (VS2010)
+
+time: Thu Feb 06 15:16:53 2020
+timezone: Финляндия (зима)
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

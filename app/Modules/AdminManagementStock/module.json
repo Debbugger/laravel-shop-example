@@ -1,0 +1,10 @@
+{
+    "name": "AdminManagementStock",
+    "slug": "adminManagementStock",
+    "version": "1.0",
+    "description": "This is the description for the Adminmanagementstock module.",
+    "Management": "1",
+    "url": "stock",
+    "section": "Склад",
+    "order": 1004
+}

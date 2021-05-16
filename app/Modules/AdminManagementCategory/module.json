@@ -1,0 +1,10 @@
+{
+    "name": "AdminSettingCategory",
+    "slug": "adminManagementCategory",
+    "version": "1.0",
+    "description": "This is the description for the AdminManagementcategory module.",
+    "Management": "1",
+    "url": "category",
+    "section": "Категории",
+    "order": 1002
+}

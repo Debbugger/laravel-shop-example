@@ -1,0 +1,209 @@
+.err-block {
+    color: rgb(255, 21, 0);
+}
+.card-for-graph{
+    display: block;
+}
+.big-icon{
+    font-size: 50px;
+    margin-top: 8px;
+
+}
+.preload-news{
+    margin-top:20px;
+}
+.chageShow{
+    white-space: nowrap;
+}
+.icon-center{
+    text-align: center;
+}
+.card-for-graph h3{
+    margin-top:22px;
+    float: left;
+}
+.card-for-graph .form-group{
+float: right;
+}
+.show-icon{
+    color: #4ecc48 !important;
+ }
+.unshow-icon{
+    color: #c21a1a !important;
+}
+.lds-ring{
+    width: 29px;
+    height: 29px;
+}
+.lds-ring div{
+    width: 28px;
+    height: 28px;
+    margin: 0;
+}
+.localization {
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    border-top: none;
+    border-bottom: none;
+    padding: 0 20px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.border-r-none {
+    border-right: none;
+}
+
+.border-l-none{
+    border-left: none;
+}
+.localizationLast {
+    border-bottom:1px solid rgba(0, 40, 100, 0.12);
+    padding-bottom: 20px;
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+.loginError {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.edit-img {
+    height: 70px;
+    width: auto;
+    max-width: 95px;
+}
+
+.loader-file {
+    position: absolute;
+    height: 30px;
+    margin-left: -65px;
+    margin-top: 22px;
+    opacity: 0;
+}
+
+/* not see input==file*/
+label.uploadbutton input {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+label.uploadbutton .button {
+    width: 100px;
+    height: 20px;
+    background: yellow;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+label.uploadbutton .button:active {
+    background: green;
+}
+
+label.uploadbutton {
+    width: 20px;
+    font-size: 20px;
+
+}
+
+.hover-img img {
+  /*  width: 100%; */
+
+}
+
+.td-image{
+    width: 130px;
+    text-align: center;
+}
+.hover-img{
+    width: 100px;
+}
+.hover-img label {
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+
+}
+
+.hover-img:hover {
+    cursor: pointer;
+}
+.hover-img:hover label {
+    opacity: 0.8;
+}
+.crud-btn{
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+}
+#form-add{
+width: auto;
+float: right;
+display: block;
+}
+.seo-modal {
+    cursor: pointer;
+    font-size: 20px;
+    color: #0061da !important;
+}
+.preload-category{
+    width: 100px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+}
+.preload-category-lg{
+    width: 100px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 350px;
+}
+.preload-product{
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+.btn-back-my{
+    width:100px;
+    float: left;
+    display: block;
+}
+.btn-create-my{
+    float: right;
+}
+.color-white{
+    color: white !important;
+}
+.image-td{
+    height: 80px;
+}
+.image-td img{
+    height: 80px;
+    width: auto;
+
+}
+.delete{
+    cursor: pointer;
+    font-size: 20px;
+    color:#0061da !important;
+}
+.edit-modal{
+    cursor: pointer;
+    font-size: 20px;
+    color:#0061da !important;
+}
+.modal-p {
+    padding-top: 45px;
+}

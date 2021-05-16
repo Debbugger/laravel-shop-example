@@ -1,0 +1,7 @@
+{
+    "name": "Products",
+    "slug": "products",
+    "version": "1.0",
+    "description": "This is the description for the Products module.",
+    "order": 10000
+}

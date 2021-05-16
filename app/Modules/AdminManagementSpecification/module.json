@@ -1,0 +1,10 @@
+{
+    "name": "AdminManagementSpecification",
+    "slug": "adminManagementSpecification",
+    "version": "1.0",
+    "description": "This is the description for the AdminManagementspecification module.",
+    "Management": "1",
+    "url": "specification",
+    "section": "Характеристики",
+    "order": 1001
+}
